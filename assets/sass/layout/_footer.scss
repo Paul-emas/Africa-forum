@@ -1,0 +1,97 @@
+.footer {
+    background-image: linear-gradient(to right, #2d2d2d, #000);
+    font-family: 'Poppins';
+    color: $color-white;
+    padding-top: 10rem;
+
+    @include respond(tab-port) {
+        padding-top: 5rem;
+    }
+
+    &-copyright {
+        padding: 2rem 0;
+        padding-top: 3rem;
+        background-color: #000;
+        text-align: center;
+
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+
+    & .col-lg-2, .col-lg-4 {
+        margin-bottom: 1rem;
+    }
+
+    & .mt {
+        margin-bottom: 3rem;
+    }
+
+    & h1 {
+        color: $color-white;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    & h3 {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    &-caption {
+        font-size: 1.2rem;
+        color: $color-white;
+        line-height: 1.8;
+    }
+
+    &-box {
+        padding: 0 .5rem;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(tab-port) {
+            justify-content: start;
+        }
+
+        & img {
+
+            @include respond(tab-port) {
+                margin-right: 1rem;
+            }
+        }
+
+        & i {
+            margin-right: 1rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 3rem;
+            font-size: 1.5rem;
+            background-image: linear-gradient(to bottom, $color-primary, #ffaa00);
+        }
+
+        &-2 {
+            justify-content: start;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    & ul {
+        li {
+            padding: .5rem 0;
+            list-style: none;
+
+            & a {
+                color: $color-primary;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

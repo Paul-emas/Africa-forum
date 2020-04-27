@@ -1,0 +1,46 @@
+.section-donate {
+    background-image: linear-gradient(to right, rgba(#000, .5), rgba(#000, .5)), url('../img/banner2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+
+    & .section-heading,
+    .section-caption {
+        text-align: center;
+        color: $color-primary;
+        text-transform: capitalize;
+    }
+
+    & h3 {
+        color: $color-white;
+        font-family: 'Oswald';
+        width: 75%;
+        font-size: 2.5rem;
+        margin: 5rem auto;
+        text-align: center;
+        line-height: 1.6;
+
+        @include respond(tab-port) {
+            width: 90%;
+            font-size: 2.2rem;
+        }
+    }
+
+    & .btn-yel {
+        color: $color-white;
+        font-size: 1.7rem;
+        font-family: 'Oswald';
+        padding: 1.2rem 4rem;
+        background-color: $color-primary;
+        text-decoration: none;
+        border-radius: 0.3rem;
+        transition: all .3s;
+        text-transform: uppercase;
+
+        &:hover {
+            letter-spacing: .2rem;
+            background-color: $color-primary;
+        }
+    }
+}
