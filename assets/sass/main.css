@@ -80,8 +80,12 @@ a {
 }
 
 .header__banner .banner-content {
-  margin-top: 13rem;
+  margin-top: 18rem;
   width: 100%;
+}
+
+.header__banner .banner-content-2 {
+  margin-top: 13rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -339,6 +343,12 @@ a {
 
 .header-2::before {
   display: none;
+}
+
+.header-3 {
+  background-position: center left;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(233, 165, 20, 0.7))), url("../img/contact-us.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(233, 165, 20, 0.7)), url("../img/contact-us.jpg");
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -646,6 +656,56 @@ body {
   margin-left: -7rem;
 }
 
+.section-blog .sec-blog--info-2 h1 {
+  font-family: 'Oswald';
+  font-size: 4rem !important;
+  color: #fad11d;
+  margin-bottom: 1rem !important;
+}
+
+.section-blog .sec-blog--info-2 ul {
+  margin-top: 2rem;
+}
+
+.section-blog .sec-blog--info-2 ul li {
+  font-size: 1.6rem;
+  padding: 2rem 0;
+  list-style: none;
+  color: #888888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-blog .sec-blog--info-2 ul li i {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: #fad11d;
+}
+
+.section-blog .sec-blog--info-2 .icon-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-blog .sec-blog--info-2 .icon-box a i {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #fad11d;
+  text-align: center;
+  line-height: 5rem;
+  -webkit-box-shadow: 0 1rem 4rem #fad11d;
+          box-shadow: 0 1rem 4rem #fad11d;
+}
+
 @media only screen and (max-width: 37.5em) {
   .section-blog .sec-blog--info {
     margin-top: 3rem;
@@ -676,6 +736,21 @@ body {
   width: 100%;
   height: 60rem;
   background-image: url("../img/bg0.jpg");
+}
+
+.section-blog .sec-blog--bg-2 {
+  background-image: url("../img/contact-bg.jpg");
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 7px solid #fad11d;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-blog .sec-blog--bg-2 {
+    background-position: center bottom !important;
+    height: 40rem;
+  }
 }
 
 .section-blog .sec-blog-vision {
@@ -1010,6 +1085,21 @@ body {
   background-color: #fad11d;
 }
 
+.section-map .mapouter {
+  position: relative;
+  text-align: right;
+  height: 50rem !important;
+  width: 100% !important;
+  margin-top: 5rem;
+}
+
+.section-map .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 100%;
+}
+
 .section-newsletter {
   text-align: center;
   background-color: #e9a514;
@@ -1119,6 +1209,73 @@ body {
     margin-right: 0;
     margin-bottom: 2rem;
   }
+}
+
+.section-event .btn-yel {
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: 'Oswald';
+  padding: 1.2rem 4rem;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 45%;
+}
+
+.section-event .btn-yel:hover {
+  letter-spacing: .2rem;
+  background-color: #fad11d;
+}
+
+.section-event .row {
+  margin-bottom: 5rem;
+}
+
+.section-event .row .col-lg-6:last-child {
+  padding: 8rem 3rem;
+  font-family: 'Poppins';
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-event .row .col-lg-6:last-child {
+    padding: 6rem 2rem;
+  }
+}
+
+.section-event .row .col-lg-6:last-child h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.section-event .row .col-lg-6:last-child .text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: #5a5a5a;
+}
+
+.section-event .row .col-lg-6:last-child ul {
+  margin-top: 1rem;
+}
+
+.section-event .row .col-lg-6:last-child ul li {
+  list-style: none;
+  padding: .6rem 0;
+  font-size: 1.4rem;
+}
+
+.section-event .row .col-lg-6:last-child ul li i {
+  margin-right: 1rem;
+}
+
+.section-event .row .col-lg-6 img {
+  width: 100%;
 }
 
 .footer {

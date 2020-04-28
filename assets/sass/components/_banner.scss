@@ -5,10 +5,16 @@
     top: 10rem;
     z-index: 2;
 
+
     & .banner {
+        
         &-content {
-            margin-top: 13rem;
+            margin-top: 18rem;
             width: 100%;
+
+            &-2 {
+                margin-top: 13rem;
+            }
 
             @include respond(tab-land) {
                 margin-top: 5rem;
@@ -52,7 +58,7 @@
 
             &-2 {
                 margin-top: 2rem;
-                
+
                 & span {
                     padding: 0 1rem;
                 }
