@@ -28,6 +28,16 @@
                 margin-top: 5rem;
                 margin-left: -7rem;
 
+                @include respond(phone) {
+                    margin-top: 3rem;
+                    margin-left: 0; 
+                    height: auto;
+                }
+
+                @include respond(tab-land){
+                    height: auto;
+                }
+
                 & h1 {
                     font-size: 3rem;
                     text-transform: uppercase;
@@ -53,6 +63,10 @@
                 text-align: center;
                 overflow: hidden;
                 position: relative;
+
+                @include respond(tab-port) {
+                    margin-bottom: 2rem;
+                }
 
                 &:hover::before {
                     width: 100%;

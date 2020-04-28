@@ -10,6 +10,11 @@
         height: 60rem;
         background-image: linear-gradient(to right, rgba($color-black, .5), rgba($color-primary-light, .7)), url('../img/banner.jpg');
 
+        @include respond(tab-port) {
+            height: 55rem !important;
+        }
+    
+
         &::before {
             display: none;
         }
