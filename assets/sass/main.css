@@ -1348,6 +1348,85 @@ body {
   padding: 6rem 0;
 }
 
+.section-blog-page--leftContent {
+  background-color: #fff;
+  -webkit-box-shadow: 0 .5rem .8rem #d2d2d2;
+          box-shadow: 0 .5rem .8rem #d2d2d2;
+  border-radius: .5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+}
+
+.section-blog-page--leftContent h2 {
+  font-family: 'Oswald';
+  border-bottom: 1px solid #d2d2d2;
+  padding: 1.6rem;
+  color: #4d4d4d;
+  text-transform: uppercase;
+}
+
+.section-blog-page--leftContent figure {
+  padding: 2rem 2rem 0 2rem;
+}
+
+.section-blog-page--leftContent figure img {
+  width: 100%;
+  border-radius: .5rem;
+  height: 14rem;
+}
+
+.section-blog-page--leftContent img {
+  border-radius: .5rem;
+}
+
+.section-blog-page--leftContent p {
+  color: #888888;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding: 0 2rem;
+  font-family: 'Poppins';
+}
+
+.section-blog-page--leftContent .recent-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 2rem;
+}
+
+.section-blog-page--leftContent .recent-post .content {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.section-blog-page--leftContent .recent-post .content p {
+  padding: 0;
+  font-size: 1rem;
+}
+
+.section-blog-page--leftContent .recent-post a {
+  color: #000;
+  font-size: 1.3rem;
+  position: relative;
+  top: -.7rem;
+  font-family: 'Poppins';
+}
+
+.section-blog-page--leftContent .recent-post a:hover {
+  color: #fad11d;
+}
+
+.section-blog-page--leftContent .abt-link {
+  color: #000;
+  font-family: 'Oswald';
+  font-size: 1.7rem;
+  padding-left: 2rem;
+}
+
+.section-blog-page--leftContent .abt-link:hover {
+  color: #fad11d;
+}
+
 @media only screen and (max-width: 56.25em) {
   .section-blog-page {
     padding: 3rem 0;

@@ -1,6 +1,84 @@
 .section-blog-page {
     padding: 6rem 0;
 
+    &--leftContent {
+        background-color: #fff;
+        box-shadow: 0 .5rem .8rem #d2d2d2;
+        border-radius: .5rem;
+        padding-bottom: 2rem;
+        margin-bottom: 5rem;
+
+        & h2 {
+            font-family: 'Oswald';
+            border-bottom: 1px solid #d2d2d2;
+            padding: 1.6rem;
+            color: #4d4d4d;
+            text-transform: uppercase;
+        }
+
+        & figure {
+            padding: 2rem 2rem 0 2rem;
+
+
+            & img {
+                width: 100%;
+                border-radius: .5rem;
+                height: 14rem;
+            }
+        }
+
+        & img {
+            border-radius: .5rem;
+        }
+
+        & p {
+            color: #888888;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            padding: 0 2rem;
+            font-family: 'Poppins';
+        }
+
+        & .recent-post {
+            display: flex;
+            padding: 1rem 2rem;
+            
+
+            & .content {
+                margin-left: 2rem;
+                text-align: left;
+
+                & p {
+                    padding: 0;
+                    font-size: 1rem;
+                }
+            }
+
+            & a {
+                color: $color-black;
+                font-size: 1.3rem;
+                position: relative;
+                top: -.7rem;
+                font-family: 'Poppins';
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        & .abt-link {
+            color: $color-black;
+            font-family: 'Oswald';
+            font-size: 1.7rem;
+            padding-left: 2rem;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
     @include respond(tab-port) {
         padding: 3rem 0;
     }
