@@ -361,11 +361,110 @@ a {
   border: 1px solid #000;
 }
 
+body {
+  overflow: hidden;
+}
+
 .login {
   width: 100%;
   height: 100vh;
   position: fixed;
   font-family: 'Poppins';
+}
+
+.login .col-lg-8 {
+  overflow: visible;
+}
+
+.login-box {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  padding-top: 6rem;
+  max-width: 50%;
+}
+
+.login-box .fa-arrow-down {
+  font-size: 2rem;
+  text-align: center;
+  width: 6rem;
+  height: 5rem;
+  position: relative;
+  margin-top: 1rem;
+  -webkit-transform: translateX(-50%) scale(0.8);
+          transform: translateX(-50%) scale(0.8);
+  left: 50%;
+  outline: 1px solid #000;
+  line-height: 5rem;
+}
+
+.login-box p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.login-box .form {
+  margin-top: 2rem;
+}
+
+.login-box .form-box {
+  margin-bottom: 2rem;
+}
+
+.login-box .form-box label {
+  font-size: 2.5rem;
+  font-family: 'Oswald';
+  margin-bottom: 1rem;
+}
+
+.login-box .form button {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Oswald';
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  position: relative;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.login-box .form button:hover::before {
+  left: 0;
+  top: 0;
+}
+
+.login-box .form button::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  left: -1rem;
+  z-index: -1;
+  top: 1rem;
+  border-radius: 0.5rem;
+  background: #fad11d;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.login-box .form-input {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  font-size: 1.3rem;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+
+.login-box h2 {
+  color: #000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .login .col-lg-4 {
@@ -376,6 +475,37 @@ a {
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.login .col-lg-4 .rgt-content {
+  margin-top: 5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.login .col-lg-4 .rgt-content h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.login .col-lg-4 .rgt-content p {
+  font-size: 1.3rem;
+}
+
+.login .col-lg-4 .rgt-content a {
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: 'Oswald';
+  padding: 1.2rem 4rem;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10rem;
+  margin-left: -5rem;
 }
 
 .header {
