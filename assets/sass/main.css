@@ -182,7 +182,7 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media screen and (max-width: 990px) {
   .header__nav .fad {
     display: block;
   }
@@ -219,7 +219,7 @@ a {
   transition: all .3s;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media screen and (max-width: 991px) {
   .header__nav ul {
     display: block;
     margin-top: 0;
@@ -1286,6 +1286,12 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   left: 45%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-event .btn-yel {
+    left: 50%;
+  }
 }
 
 .section-event .btn-yel:hover {

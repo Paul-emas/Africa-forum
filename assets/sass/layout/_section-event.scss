@@ -14,6 +14,10 @@
         position: relative;
         transform: translateX(-50%);
         left: 45%;
+
+        @include respond(tab-port) {
+            left: 50%;
+        }
         
         &:hover {
             letter-spacing: .2rem;

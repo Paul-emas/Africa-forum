@@ -25,9 +25,9 @@
         right: 2rem;
         top: 2rem;
         font-size: 3rem;
-        display: none;   
+        display: none;
 
-        @include respond(tab-port) {
+        @media screen and (max-width: 990px) {
             display: block;
         }
     }
@@ -53,7 +53,7 @@
         z-index: 10;
         transition: all .3s;
 
-        @include respond(tab-port) {
+        @media screen and (max-width: 991px) {
             display: block;
             margin-top: 0;
             background-image: linear-gradient(to right, #2d2d2d, #000);
@@ -61,6 +61,9 @@
             overflow: hidden;
             border-radius: .8rem;
         }
+
+
+        @include respond(tab-port) {}
 
         & .btn {
             background-color: $color-white;
