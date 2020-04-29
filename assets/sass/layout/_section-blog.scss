@@ -247,12 +247,24 @@
                         color: $color-primary;
                     }
                 }
+
+                &-4 {
+                    background-image: url('../img/blog/blog.jpg');
+                    background-position: top  center;
+                    background-repeat: no-repeat;
+
+                    @include respond(tab-port) {
+                        background-size: cover;
+                        background-position: right center;
+                    }
+                }
             }
 
             &--content {
                 width: 100%;
                 box-shadow: 0 .5rem 2rem #d2d2d2;
                 border-radius: 0.8rem;
+                margin-bottom: 3rem;
                 overflow: hidden;
                 font-family: 'Poppins';
 

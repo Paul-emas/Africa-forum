@@ -1,0 +1,274 @@
+.section-blog-page {
+    padding: 6rem 0;
+
+    @include respond(tab-port) {
+        padding: 3rem 0;
+    }
+
+    & .comments-header {
+        @include respond(phone) {
+            font-size: 2rem !important;
+        }
+    }
+
+
+    & .sec-blg--content {
+        width: 100% !important;
+        padding-bottom: 5rem;
+
+        & .form {
+            
+            &-box {
+                display: flex;
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+
+                &:first-child {
+
+                    @include respond(tab-port) {
+                        margin-top: 2rem;
+                    }
+                }
+
+                @include respond(tab-port) {
+                    display: block;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+            }
+
+            & button {
+                width: 100%;
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                border: none;
+                font-size: 1.4rem;
+                color: $color-white;
+                background-color: $color-black;
+                text-transform: uppercase;
+                font-family: 'Oswald';
+            }
+
+            &-input {
+                width: 33.3%;
+                padding: 1.6rem 2rem;
+                background-color: #eeeeee;
+                border-radius: .3rem;
+                border: 1px solid #979797;
+                outline: none;  
+                text-transform: uppercase;
+                font-size: 1.3rem;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+
+                &-2 {
+                    width: 100%;
+                    padding-bottom: 15rem;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+
+                    @include respond(tab-port) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        & .comments {
+            justify-content: start !important;
+            font-size: 1.5rem !important;
+            margin-left: 1rem;
+            margin-bottom: -.7rem !important;
+
+            & span {
+                padding: 0 1.5rem;
+                color: #999696;
+            }
+        }
+
+        & .social-link {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+
+            & .fa-twitter {
+                background-image: linear-gradient(to right, #12c4f0, #098aa1) !important;
+            }
+
+            & .fa-instagram {
+                background-image: linear-gradient(to right, #f03e12, #b11b1b) !important;
+            }
+
+            & span {
+                margin-right: 1rem;
+            }
+
+            & .icons {
+                width: 3rem;
+                height: 3rem;
+                margin-right: .5rem;
+                border-radius: 50%;
+                color: $color-white;
+                line-height: 3rem;
+                text-align: center;
+
+                &:nth-child(1) {
+                    background-image: linear-gradient(to right, #1260f0, #093ea1);
+                }
+            }
+        }
+
+        & .authour {
+            padding: 2rem 2.5rem;
+            display: flex;
+            background-color: #f3f3f3;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+
+            @include respond(phone) {
+                display: block;
+            }
+
+            &-3 {
+                padding-left: 7rem !important;
+
+                @include respond(phone) {
+                    padding-left: 1.5rem !important;
+                }
+            }
+            
+            &-end {
+                margin-bottom: 3rem;
+            }
+
+            &-2 {
+                background-color: #fff;
+                border-bottom: 1px solid #d2d2d2;
+                margin-top: 0;
+                
+
+                @include respond(phone) {
+                    padding: 2rem 1.5rem;
+                }
+
+                & .text {
+                    font-size: 1.2rem !important;
+                }
+
+                & h4 {
+
+                    @include respond(phone) {
+                        padding-bottom: 2rem;
+                    }
+
+                    & span {
+                        float: right;
+                        right: 0;
+                        position: absolute;
+                        font-size: 1.6rem;
+                        font-family: 'Poppins';
+
+                        @include respond(phone) {
+                            font-size: 1.1rem;
+                            margin-top: 1.7rem;
+                        }
+
+                        & i {
+                            color: $color-primary;
+                        }
+
+                        &:first-child {
+                            cursor: pointer;
+                        }
+
+                        &:last-child {
+                            right: 8rem;
+
+                            @include respond(phone) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & h4 {
+                font-size: 2.6rem;
+                font-family: 'Oswald';
+            }
+
+            & p {
+                font-size: 1.5rem !important;
+            }
+
+            &-img {
+                margin-right: 2rem;
+                margin-top: .6rem;
+
+                &-2 {
+                    transform: scale(.8);
+                }
+
+                & img {
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        & figure {
+            height: 50rem !important;
+
+            @include respond(phone) {
+                height: 35rem !important;
+            }
+        }
+
+        & .sec-blg--details {
+
+            & h2 {
+                font-size: 3rem !important;
+                color: #2d2d2d !important;
+                font-weight: 700;
+                margin-bottom: -.1rem;
+            }
+
+            & p {
+                color: #888888;
+                font-size: 1.5rem;
+                width: 95%;
+                line-height: 1.7;
+
+                @include respond(phone) {
+                    font-size: 1.4rem;
+                }
+            }
+
+            h3 {
+                color: #2d2d2d;
+                font-weight: 600;
+            }
+
+            & ul {
+                margin-bottom: 1rem;
+
+                & li {
+                    list-style-type: none;
+                    padding: .8rem 0;
+                    color: #888888;
+                    font-size: 1.4rem;
+
+                    & i {
+                        margin-right: .6rem;
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
