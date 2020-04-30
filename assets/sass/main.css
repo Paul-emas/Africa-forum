@@ -368,6 +368,14 @@ a {
   font-family: 'Poppins';
 }
 
+@media only screen and (max-width: 56.25em) {
+  .login {
+    height: 100%;
+    padding-bottom: 5rem;
+    overflow-y: scroll;
+  }
+}
+
 .login .col-lg-8 {
   overflow: visible;
 }
@@ -382,6 +390,7 @@ a {
 @media only screen and (max-width: 75em) {
   .login-box {
     padding-top: 3rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -455,6 +464,12 @@ a {
   font-size: 2.5rem;
   font-family: 'Oswald';
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .login-box .form-box label {
+    font-size: 2rem;
+  }
 }
 
 .login-box .form button {
