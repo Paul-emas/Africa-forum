@@ -29,6 +29,10 @@
         background-image: linear-gradient(to right, rgba($color-black, .5), rgba($color-primary-light, .7)), url('../img/banner3.jpg');
     }
 
+    &-5 {
+        background-image: linear-gradient(to right, rgba($color-black, .5), rgba($color-primary-light, .7)), url('../img/banner4.jpg');
+    }
+
     @include respond(tab-port) {
         background-position: center center;
         height: 70rem;

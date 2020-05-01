@@ -17,14 +17,14 @@
 <body>
 
     <!-- Header -->
-    <header class="header header-2 header-4">
+    <header class="header header-2 header-5">
         <div class="header-bg"></div>
         <div class="container">
             <nav class="header__nav header__nav-2" id="navbar">
                 <div class="container">
 
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-2">
                             <div class="header__nav--logo">
                                 <a href="index.html">
                                     <img src="assets/img/logo.png" alt="header-logo" />
@@ -32,14 +32,15 @@
                             </div>
                             <i class="fad fa-bars" id="toggle"></i>
                         </div>
-                        <div class="col-lg-9">
+                        <div class="col-lg-10">
                             <ul class="navigation">
                                 <li><a href="index.html" class="navbar-links">Home</a></li>
-                                <li><a href="#" class="navbar-links">About us</a></li>
+                                <li><a href="about.html" class="navbar-links">About us</a></li>
+                                <li><a href="event.html" class="navbar-links">Events</a></li>
                                 <li><a href="blog.html" class="navbar-links">Lets Talk</a></li>
                                 <li><a href="advert.html" class="navbar-links">Adverts</a></li>
                                 <li><a href="contact.html" class="navbar-links">Contact us</a></li>
-                                <li class="btn"><a href="login.html">Learn more</a></li>
+                                <li class="btn"><a href="register.html">Learn more</a></li>
                                 <li class="btn btn-2"><a href="donate.html">Donate</a></li>
                             </ul>
                         </div>
@@ -52,8 +53,8 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="banner-content banner-content-2">
-                                <h1 class="banner-caption">Popular Topic Rising Across Africa</h1>
-                                <p class="banner-text banner-text-2">HOME <span>/</span> LET'S TALK</p>
+                                <h1 class="banner-caption">Contribute to help africa's youths</h1>
+                                <p class="banner-text banner-text-2">HOME <span>/</span> DONATE</p>
                             </div>
                         </div>
                         <div class="col-lg-4"></div>
@@ -66,249 +67,73 @@
     <!-- Main -->
     <main class="start">
 
-        <section class="section-blog section-padding">
+        <div class="section-conference donate-container section-padding">
             <div class="container">
-                <h1 class="section-heading">Be Updated with Top Posts</h1>
-                <p class="section-caption"><span>-</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="sec-blg--content">
-                            <figure class="sec-blg-bg">
-                                <span>Health</span>
-                            </figure>
-                            <div class="comments">
-                                <span>20 mar, 2021</span>
-                                <span>|</span>
-                                <span>123 comments</span>
+                <div class="sec-con">
+                    <h1 class="section-heading">Donate now!</h1>
+                    <p class="section-caption"><span>-</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                    </p>
+
+                    <h2><i class="fa fa-donate"></i> Donation amount</h2>
+                    <div class="donate-box">
+                        <ul id="donateBox">
+                            <li class="amount active">$5</li>
+                            <li class="amount">$20</li>
+                            <li class="amount">$50</li>
+                            <li class="amount">$100</li>
+                            <li class="amount">$250</li>
+                            <li class="amount">$500</li>
+                            <li class="amount">$100</li>
+                            <form action="#" class="form">
+                                <input type="text" placeholder="$ Other" class="amount" />
+                            </form>
+                        </ul>
+                    </div>
+
+                    <form action="#" class="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2><i class="fa fa-money-bill-wave"></i> Payment Methods <span> <i
+                                            class="fa fa-arrow-down"></i> Select a payment plan</span></h2>
+                                <select required>
+                                    <option value="0">One time</option>
+                                    <option value="1">Weekly</option>
+                                    <option value="2">Monthly</option>
+                                    <option value="3">Yearly</option>
+                                </select>
                             </div>
-                            <div class="sec-blg--details">
-                                <h2><a href="#">Media talking about foriegn affairs</a></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="col-md-6">
+                                <h2><i class="fa fa-money-bill-wave"></i> Causes & Projects <span> <i
+                                            class="fa fa-arrow-down"></i> Cause/Project Contribution</span></h2>
+                                <select required>
+                                    <option value="0">One time</option>
+                                    <option value="1">Weekly</option>
+                                    <option value="2">Monthly</option>
+                                    <option value="3">Yearly</option>
+                                </select>
                             </div>
-                            <div class="sec-blg--link">
-                                <div class="user">
-                                    <figure>
-                                        <img src="assets/img/avater/tuser1.jpg" alt="avater" />
-                                    </figure>
-                                    <p class="name">James Anderson</p>
-                                </div>
-                                <div class="icon">
-                                    <a href="blog-page.html"><i class="fa fa-arrow-right"></i></a>
-                                </div>
+                            <div class="col-md-6">
+                                <h2>Donator Details</h2>
+                                <input type="text" placeholder="First Name" class="form-input" required />
                             </div>
+                            <div class="col-md-6">
+                                <h2>Lastname</h2>
+                                <input type="text" placeholder="Last Name" class="form-input" required />
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Email Address</h2>
+                                <input type="email" placeholder="Email" class="form-input" required />
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Postal / Zip Code</h2>
+                                <input type="number" placeholder="000000" class="form-input" required />
+                            </div>
+                            <button type="submit">Proceed with donation</button>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="sec-blg--content">
-                            <figure class="sec-blg-bg sec-blg-bg-1">
-                                <span>Commuication</span>
-                            </figure>
-                            <div class="comments">
-                                <span>20 mar, 2021</span>
-                                <span>|</span>
-                                <span>145 comments</span>
-                            </div>
-                            <div class="sec-blg--details">
-                                <h2><a href="#">Integer mollis urna et egestas pretium</a></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sec-blg--link">
-                                <div class="user">
-                                    <figure>
-                                        <img src="assets/img/avater/tuser2.jpg" alt="avater" />
-                                    </figure>
-                                    <p class="name">James Anderson</p>
-                                </div>
-                                <div class="icon">
-                                    <a href="blog-page.html"><i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="sec-blg--content">
-                            <figure class="sec-blg-bg sec-blg-bg-3">
-                                <span>Finance</span>
-                            </figure>
-                            <div class="comments">
-                                <span>20 mar, 2021</span>
-                                <span>|</span>
-                                <span>201 comments</span>
-                            </div>
-                            <div class="sec-blg--details">
-                                <h2><a href="#">Cras accumsan mauris eget massa</a></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sec-blg--link">
-                                <div class="user">
-                                    <figure>
-                                        <img src="assets/img/avater/user2.jpg" alt="avater" />
-                                    </figure>
-                                    <p class="name">James Anderson</p>
-                                </div>
-                                <div class="icon">
-                                    <a href="blog-page.html"><i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="sec-blg--content">
-                            <figure class="sec-blg-bg sec-blg-bg-2">
-                                <span>Leadership</span>
-                            </figure>
-                            <div class="comments">
-                                <span>20 mar, 2021</span>
-                                <span>|</span>
-                                <span>186 comments</span>
-                            </div>
-                            <div class="sec-blg--details">
-                                <h2><a href="#">Integer mollis urna et egestas pretium</a></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sec-blg--link">
-                                <div class="user">
-                                    <figure>
-                                        <img src="assets/img/avater/tuser3.jpg" alt="avater" />
-                                    </figure>
-                                    <p class="name">James Anderson</p>
-                                </div>
-                                <div class="icon">
-                                    <a href="blog-page.html"><i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-lg-3">
-                        <div class="sec-blg--content">
-                            <figure class="sec-blg-bg sec-blg-bg-2">
-                                <span>Leadership</span>
-                            </figure>
-                            <div class="comments">
-                                <span>20 mar, 2021</span>
-                                <span>|</span>
-                                <span>186 comments</span>
-                            </div>
-                            <div class="sec-blg--details">
-                                <h2><a href="#">Integer mollis urna et egestas pretium</a></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sec-blg--link">
-                                <div class="user">
-                                    <figure>
-                                        <img src="assets/img/avater/tuser3.jpg" alt="avater" />
-                                    </figure>
-                                    <p class="name">James Anderson</p>
-                                </div>
-                                <div class="icon">
-                                    <a href="blog-page.html"><i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="sec-blg--content">
-                            <figure class="sec-blg-bg sec-blg-bg-1">
-                                <span>Commuication</span>
-                            </figure>
-                            <div class="comments">
-                                <span>20 mar, 2021</span>
-                                <span>|</span>
-                                <span>145 comments</span>
-                            </div>
-                            <div class="sec-blg--details">
-                                <h2><a href="#">Integer mollis urna et egestas pretium</a></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sec-blg--link">
-                                <div class="user">
-                                    <figure>
-                                        <img src="assets/img/avater/tuser2.jpg" alt="avater" />
-                                    </figure>
-                                    <p class="name">James Anderson</p>
-                                </div>
-                                <div class="icon">
-                                    <a href="blog-page.html"><i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="sec-blg--content">
-                            <figure class="sec-blg-bg">
-                                <span>Health</span>
-                            </figure>
-                            <div class="comments">
-                                <span>20 mar, 2021</span>
-                                <span>|</span>
-                                <span>123 comments</span>
-                            </div>
-                            <div class="sec-blg--details">
-                                <h2><a href="#">Media talking about foriegn affairs</a></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sec-blg--link">
-                                <div class="user">
-                                    <figure>
-                                        <img src="assets/img/avater/tuser1.jpg" alt="avater" />
-                                    </figure>
-                                    <p class="name">James Anderson</p>
-                                </div>
-                                <div class="icon">
-                                    <a href="blog-page.html"><i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="sec-blg--content">
-                            <figure class="sec-blg-bg sec-blg-bg-3">
-                                <span>Finance</span>
-                            </figure>
-                            <div class="comments">
-                                <span>20 mar, 2021</span>
-                                <span>|</span>
-                                <span>201 comments</span>
-                            </div>
-                            <div class="sec-blg--details">
-                                <h2><a href="#">Cras accumsan mauris eget massa</a></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="sec-blg--link">
-                                <div class="user">
-                                    <figure>
-                                        <img src="assets/img/avater/user2.jpg" alt="avater" />
-                                    </figure>
-                                    <p class="name">James Anderson</p>
-                                </div>
-                                <div class="icon">
-                                    <a href="blog-page.html"><i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pagination">
-                        <a href="#">&laquo;</a>
-                        <a href="#">1</a>
-                        <a href="#" class="active">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">&raquo;</a>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="section-newsletter section-padding">
             <div class="container">

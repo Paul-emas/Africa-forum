@@ -95,7 +95,6 @@
             padding: .8rem 1.2vw;
             position: relative;
             overflow: hidden;
-            cursor: pointer;
 
             @include respond(tab-land) {
                 display: block;
