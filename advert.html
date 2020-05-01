@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <!-- Fonts -->
     <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/css/aos.css">
 </head>
 
 <body>
@@ -67,66 +69,66 @@
     <main class="start">
 
         <section class="section-gallery section-padding">
-            
-            <div class="row">
-                <h1 class="section-heading">Holding Conferences Across Africa</h1>
-                <p class="section-caption"><span>-</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit
-                </p>
 
-                <div class="column">
-                    <figure>
-                        <div class="details">
-                            <h1 class="heading">Art work from Angola</h1>
-                            <p></p>
-                        </div>
-                        <img src="assets/img/advert/ads-0.jpg" alt="ads" data-aos="fade-in" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-1.jpg" alt="ads" data-aos="zoom" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-8.jpg" alt="ads" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-10.jpg" alt="ads" />
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure> <img src="assets/img/advert/ads-3.jpg" alt="ads" data-aos="zoom" /></figure>
-                    <figure>
-                        <img src="assets/img/advert/bg6.jpg" alt="ads" data-aos="zoom" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-5.jpg" alt="ads" data-aos="zoom" class="img-2" />
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure data-aos="zoom">
-                        <img src="assets/img/advert/ads-4.jpg" alt="ads" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-7.jpg" alt="ads" data-aos="zoom" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-2.jpeg" alt="ads" data-aos="zoom" class="img-3" />
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure>
-                        <img src="assets/img/advert/ads-6.jpg" alt="ads" data-aos="zoom" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-9.jpg" alt="ads" data-aos="zoom" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-6.jpg" alt="ads" data-aos="zoom" />
-                    </figure>
-                    <figure>
-                        <img src="assets/img/advert/ads-8.jpg" alt="ads" />
-                    </figure>
+            <div class="row-container">
+                <div class="row">
+
+
+                    <div class="column">
+                        <figure>
+                            <div class="details">
+                                <!-- <h1 class="heading">50Year old sculptures from Angola</h1> -->
+                                <p></p>
+                            </div>
+                            <img src="assets/img/advert/ads-0.jpg" alt="ads" data-aos-delay="50" data-aos="fade-in" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-1.jpg" alt="ads" data-aos-delay="50"  data-aos="zoom-in" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-8.jpg" alt="ads" data-aos-delay="50" data-aos="zoom-img" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-10.jpg" alt="ads" data-aos-delay="50" data-aos="zoom-in" />
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure> <img src="assets/img/advert/ads-3.jpg" alt="ads" data-aos-delay="150"  data-aos-delay="150" data-aos="zoom-in" /></figure>
+                        <figure>
+                            <img src="assets/img/advert/bg6.jpg" alt="ads"  data-aos-delay="150" data-aos="zoom-in" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-5.jpg" alt="ads"  data-aos-delay="150" data-aos="zoom-in" class="img-2" />
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure  data-aos="zoom-in-in">
+                            <img src="assets/img/advert/ads-4.jpg" alt="ads" data-aos-delay="250" data-aos="zoom-in" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-7.jpg" alt="ads"  data-aos-delay="250"  data-aos="zoom-in" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-2.jpeg" alt="ads"  data-aos-delay="250"  data-aos="zoom-in" class="img-3" />
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="assets/img/advert/ads-6.jpg" alt="ads"  data-aos-delay="350" data-aos="zoom-in" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-9.jpg" alt="ads"  data-aos-delay="350" data-aos="zoom-in" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-6.jpg" alt="ads" data-aos-delay="350" data-aos="zoom-in" />
+                        </figure>
+                        <figure>
+                            <img src="assets/img/advert/ads-8.jpg" alt="ads" data-aos-delay="350" data-aos="zoom-in"/>
+                        </figure>
+                    </div>
                 </div>
             </div>
-            </div>
+
         </section>
 
         <section class="section-donate section-padding">
@@ -220,7 +222,7 @@
     <!-- external script -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/aos-master/aos.js"></script>
-    <script src="assets/js/aos-master/init.js.js"></script>
+    <script src="assets/js/aos-master/init.js"></script>
 </body>
 
 </html>
