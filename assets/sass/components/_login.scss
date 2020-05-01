@@ -3,6 +3,7 @@
     height: 100vh;
     position: fixed;
     font-family: 'Poppins';
+    overflow-x: hidden;
 
 
     @include respond(tab-port) {
@@ -11,15 +12,16 @@
         overflow-y: scroll;
     }
 
-    & .col-lg-8 {
-        overflow: visible;
-    }
 
     &-box {
         padding: 3rem 2rem;
         margin: 0 auto;
         padding-top: 6rem;
-        max-width: 50%;
+        max-width: 80%;
+
+        &-2 {
+            max-width: 50%;
+        }
 
         @include respond(tab-land) {
             padding-top: 3rem;
@@ -68,7 +70,7 @@
         }
 
         & .form {
-            margin-top: 2rem;
+            margin-top: 7rem;
 
             @include respond(tab-land) {
                 margin-top: 0;

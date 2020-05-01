@@ -365,6 +365,7 @@ a {
   height: 100vh;
   position: fixed;
   font-family: 'Poppins';
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -375,14 +376,14 @@ a {
   }
 }
 
-.login .col-lg-8 {
-  overflow: visible;
-}
-
 .login-box {
   padding: 3rem 2rem;
   margin: 0 auto;
   padding-top: 6rem;
+  max-width: 80%;
+}
+
+.login-box-2 {
   max-width: 50%;
 }
 
@@ -439,7 +440,7 @@ a {
 }
 
 .login-box .form {
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -584,6 +585,7 @@ a {
   border-radius: 0.8rem;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .donate-container .row {

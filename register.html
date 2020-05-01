@@ -24,21 +24,49 @@
                     <p>Please fill the form below to proceed</p>
                     <i class="fal fa-arrow-down"></i>
                     <form action="index.html" class="form">
-                        <div class="form-box">
-                            <label for="name">Full Name:</label> <br>    
-                            <input type="text" placeholder="Full Name" class="form-input" required/>
-                        </div>
-                        <div class="form-box">
-                            <label for="email">Email:</label> <br>   
-                            <input type="text" placeholder="Email Address" class="form-input" required/>
-                        </div>
-                        <div class="form-box">
-                            <label for="pass0">Password:</label> <br> 
-                            <input type="text" placeholder="Enter Password" class="form-input" required/>
-                        </div>
-                        <div class="form-box">
-                            <label for="pass1">Repeat Password:</label> <br> 
-                            <input type="text" placeholder="Enter Password" class="form-input" required/>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-box">
+                                    <label for="name">Full Name:</label> <br>
+                                    <input type="text" placeholder="Full Name" class="form-input" required />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-box">
+                                    <label for="phone">Phone number:</label> <br>
+                                    <input type="text" placeholder="Email Address" class="form-input" required />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-box">
+                                    <label for="email">Email:</label> <br>
+                                    <input type="text" placeholder="Email Address" class="form-input" required />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-box">
+                                    <label for="email">Country:</label> <br>
+                                    <select class="form-input">
+                                        <option>Algeria</option>
+                                        <option>Angola</option>
+                                        <option>Congo</option>
+                                        <option>Ethopia</option>
+                                        <option>Nigeria</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-box">
+                                    <label for="pass0">Password:</label> <br>
+                                    <input type="password" placeholder="Enter Password" class="form-input" required />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-box">
+                                    <label for="pass1">Repeat Password:</label> <br>
+                                    <input type="password" placeholder="Enter Password" class="form-input" required />
+                                </div>
+                            </div>
                         </div>
                         <button type="submit">Sign up</button>
                     </form>
